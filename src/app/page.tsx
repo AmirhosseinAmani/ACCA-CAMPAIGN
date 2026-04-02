@@ -5,7 +5,7 @@ import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import VisitorCounter from "@/components/VisitorCounter";
 import SocialLinks from "@/components/SocialLinks";
-import { EMAIL_SUBJECT, PETITION_TEXT, RECIPIENTS, UNIVERSITIES } from "@/lib/constants";
+import { EMAIL_SUBJECT, PETITION_TEXT, RECIPIENTS, UNIVERSITIES, WHATSAPP_URL } from "@/lib/constants";
 import { Lang, translations } from "@/lib/i18n";
 
 export default function HomePage() {
@@ -178,7 +178,7 @@ Telefon: ${phoneNumber}
 
           <div className="flex justify-center">
             <SocialLinks
-              whatsappUrl="https://chat.whatsapp.com/YOUR_GROUP_LINK"
+              whatsappUrl={WHATSAPP_URL}
               instagramUrl="https://instagram.com/YOUR_PAGE"
               whatsappLabel={t.whatsapp}
               instagramLabel={t.instagram}
