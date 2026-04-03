@@ -117,7 +117,13 @@ Telefon: ${phoneNumber}
             </div>
 
             <h1 className="text-3xl font-bold text-[#1b3558]">{t.title}</h1>
-            <p className="mt-4 max-w-2xl leading-8 text-[#4b5563]">{t.intro}</p>
+            <p
+  className={`mt-6 max-w-3xl whitespace-pre-line text-[17px] leading-[2.2] text-[#4b5563] ${
+    lang === "fa" ? "text-right" : "text-left"
+  }`}
+>
+  {t.intro}
+</p>
           </div>
 
           <div className="mx-auto mt-10 max-w-xl rounded-3xl border border-[#e7d7bf] bg-[#fffdfa] p-6 shadow-md">
